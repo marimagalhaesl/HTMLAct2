@@ -37,7 +37,6 @@ height: 150px;
 display: flex;
 flex-direction: row;
 align-items: center;
-
 }
 
 .headerimg{
@@ -60,6 +59,32 @@ margin-left: 5px;
 body{
 background-color: #ffe5f0;
 margin: 0;
+}
+
+.form
+{
+display: block;
+text-align: center;
+}
+
+form
+{
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+
+input 
+{ 
+margin-bottom: 10px; 
+}
+
+fieldset{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
 }
 
 
@@ -89,5 +114,6 @@ background-color: white;
 opacity: 0.5;
 height: 50px;
 margin-top: 10px;
-
+position: relative;
+clear: both;
 }

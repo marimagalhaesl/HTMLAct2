@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mamaco King</title>
-    <link href="/HTMLAct2/style.css" rel="stylesheet" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mamaco King</title>
+		<link href="/HTMLAct2/style.css" rel="stylesheet" />
+	</head>
 
-  <header>
-    <div class="wrapheader">
-      <img src="/HTMLAct2/img/K.png" alt="logo" class="headerimg" />
-      <input type="text" id="search" placeholder="Search" />
-      <button id="btnheader">Go</button>
-    </div>
-    <ul>
-      <li><a href="/HTMLAct2/index.html">Home</a></li>
-      <li><a href="/HTMLAct2/table.html">Promotional Pricing</a></li>
-      <li><a href="/HTMLAct2/form.html">Form</a></li>
-    </ul>
-  </header>
+	<header>
+		<div class="wrapheader">
+			<img src="/HTMLAct2/img/K.png" alt="logo" class="headerimg" />
+			<input type="text" id="search" placeholder="Search" />
+			<button id="btnheader">Go</button>
+		</div>
+		<ul>
+			<li><a href="/HTMLAct2/index.html">Home</a></li>
+			<li><a href="/HTMLAct2/table.html">Promotional Pricing</a></li>
+			<li><a href="/HTMLAct2/form.html">Cadastro</a></li>
+		</ul>
+	</header>
 
-  <body>
-    <h1 align="center">Formulário:</h1>
-  </body>
-
-  <footer></footer>
+	<body>
+		<div class="form">
+			<fieldset>
+				<legend>Cadastre-se</legend>
+				<form action="/HTMLAct2/index.html">
+					<label for="nome">Nome Completo</label><br />
+					<input
+						type="text"
+						id="nome"
+						name="nome"
+						placeholder="Digite seu nome"
+					/><br />
+					<label for="nascimento">Data de Nascimento</label><br />
+					<input type="date" id="nascimento" name="nascimento" />
+					<br />
+					<label for="email">Email</label> <br />
+					<input type="email" id="email" name="email" />
+					<br />
+					<label for="endereco">Endereço</label> <br />
+					<input type="text" id="endereco" name="endereco" /> <br />
+					<br />
+					<label for="estado">Estado</label>
+					<select name="estado" id="estado">
+						<option value="AC">AC</option>
+						<option value="AL">AL</option>
+						<option value="AP">AP</option>
+						<option value="AM">AM</option>
+						<option value="BA">BA</option>
+						<option value="CE">CE</option>
+						<option value="DF">DF</option>
+						<option value="ES">ES</option>
+						<option value="GO">GO</option>
+						<option value="MA">MA</option>
+						<option value="MT">MT</option>
+						<option value="MS">MS</option>
+						<option value="MG">MG</option>
+						<option value="PA">PA</option>
+						<option value="PB">PB</option>
+						<option value="PR">PR</option>
+						<option value="PE">PE</option>
+						<option value="PI">PI</option>
+						<option value="RJ">RJ</option>
+						<option value="RN">RN</option>
+						<option value="RS">RS</option>
+						<option value="RO">RO</option>
+						<option value="RR">RR</option>
+						<option value="SC">SC</option>
+						<option value="SP">SP</option>
+						<option value="SE">SE</option>
+						<option value="TO">TO</option>
+					</select>
+					<br />
+					<br />
+					<label for="cpf">CPF</label> <br />
+					<input type="text" id="cpf" name="cpf" />
+					<br />
+					<label for="senha">Senha</label><br />
+					<input type="password" id="senha" nome="senha" />
+					<br />
+					<input type="submit" value="Enviar" />
+					<input type="reset" value="Apagar dados" />
+				</form>
+			</fieldset>
+		</div>
+	</body>
 </html>
